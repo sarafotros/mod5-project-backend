@@ -35,6 +35,10 @@ class UsersController < ApplicationController
     end
 
 
+    # where to add param permit?    
+    def user_params
+        params.require(:user).permit(:name, :username, :password, :phone, :picture)
+    end
 
 
 end
