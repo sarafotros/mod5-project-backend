@@ -30,7 +30,7 @@ class UsersController < ApplicationController
         if user.valid?
             render json: {user: user, token: generate_token({id: user.id }) }
         else
-            render json: { error: user.errors.full_messages}
+            render json: { error: user.errors.full_messages} , status: 400
         end
 
     end
