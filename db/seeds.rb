@@ -7,8 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.delete_all
-
+Service.delete_all
 
 u1 = User.create(name:"Renata", username:"Freitas", password:"123", phone:"123123123", admin?:true)
 u2 = User.create(name:"Toli", username:"Benson", password:"123", phone:"123123123", admin?:false)
 u3 = User.create(name:"Sara", username:"Fotros", password:"123", phone:"123123123", admin?:true)
+
+
+Service.create(name:"Coneversion/Building", category:"Builder", price:2000 ,description:"Cellar & Basement Coneversion", image:"" )
+Service.create(name:"Improvement", category:"Builder", price: 3000 ,description:"Home Improvement / Conservatory ", image:"" )
+Service.create(name:"", category:"", price: ,description:"", image:"" )
+Service.create(name:"", category:"", price: ,description:"", image:"" )
+Service.create(name:"", category:"", price: ,description:"", image:"" )
+Service.create(name:"", category:"", price: ,description:"", image:"" )
+Service.create(name:"", category:"", price: ,description:"", image:"" )

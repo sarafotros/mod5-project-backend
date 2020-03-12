@@ -25,20 +25,17 @@ class UsersController < ApplicationController
     end
 
     def create
-        user = User.new(name: params[:name], username: params[:username], password: params[:password], phone: params[:phone])
+        user = User.create(name: params[:name], username: params[:username], password: params[:password], phone: params[:phone])
 
-        if user.save
+        if user.valid?
             render json: {user: user, token: generate_token({id: user.id }) }
         else
-            render json: { error: "You are not authorized" }
+            render json: { error: user.errors.full_messages}
         end
+
     end
 
 
-    # where to add param permit?    
-    def user_params
-        params.require(:user).permit(:name, :username, :password, :phone, :picture)
-    end
 
 
 end
