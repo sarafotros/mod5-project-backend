@@ -77,9 +77,19 @@ test:
 #
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
-#
-production:
+# #
+
+
+# production:
+#   <<: *default
+#   database: mod5_backend_production
+#   username: mod5_backend
+#   password: <%= ENV['MOD5_BACKEND_DATABASE_PASSWORD'] %>
+
+  production:
   <<: *default
-  database: mod5_backend_production
-  username: mod5_backend
-  password: <%= ENV['MOD5_BACKEND_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  database: myapp_production
+  username: myapp
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
