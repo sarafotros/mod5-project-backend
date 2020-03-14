@@ -6,6 +6,18 @@ local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
 
+google:
+  service: GCS
+  project: handyapp-112020
+  credentials: <%= ENV['GOOGLE_APPLICATION_CREDENTIALS'].as_json %>
+  # credentials: <%= Rails.root.join("config/secrets/googleSecret.json") %>
+  bucket: handyman-sf
+
+google_dev:
+  service: GCS
+  project: handyapp-112020
+  credentials: <%= Rails.root.join("config/secrets/googleSecret.json") %>
+  bucket: handyman-sf
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
 #   service: S3
@@ -15,17 +27,6 @@ local:
 #   bucket: your_own_bucket
 
 # Remember not to checkin your GCS keyfile to a repository
-google:
-  service: GCS
-  project: HandyApp
-  credentials: <%= Rails.root.join("config/secrets/googleSecret.json") %>
-  bucket: handyman-sf
-
-  google_dev:
-  service: GCS
-  project: HandyApp
-  credentials: <%= Rails.root.join("config/secrets/googleSecret.json") %>
-  bucket: handyman-sf
 
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
 # microsoft:
