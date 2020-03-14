@@ -6,4 +6,9 @@ class ServicesController < ApplicationController
     def show 
        render json: Service.find(params[:id])
     end
+
+
+
+
+
 end

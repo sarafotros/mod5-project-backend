@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Request.delete_all
-User.delete_all
-Service.delete_all
+# Request.delete_all
+# User.delete_all
+# Service.delete_all
 
 u1 = User.create(name:"Renata", username:"Freitas", password:"123", phone:"123123123", admin?:true)
 u2 = User.create(name:"Toli", username:"Benson", password:"123", phone:"123123123", admin?:false)

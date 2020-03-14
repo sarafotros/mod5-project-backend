@@ -47,7 +47,7 @@ gem "jwt", "~> 2.2"
 gem "active_model_serializers", "~> 0.10.10"
 
 gem "faker", "~> 2.10"
-gem "google-cloud-storage", "~> 1.8", require: false
+gem "google-cloud-storage", require: false
 
 # group :production do
 #   gem 'pg'
