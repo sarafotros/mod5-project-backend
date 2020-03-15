@@ -56,3 +56,12 @@ Service.create(name:"Man and Van", category:"Removal Service", price: 60,descrip
 
 Service.create(name:"Single or Dubble Glazzeing", category:"Window Fitter", price: 520,description:"The window fitter will install windows, conservatories and glazed curtain walls in homes and businesses. The main duties of a window fitter are: ... Measuring up the space for new windows or doors. Fixing units in place, making sure they're level and secure", image:"https://picsum.photos/200")
 Service.create(name:"Conservatory", category:"Window Fitter", price: 520,description:"The window fitter will install windows, conservatories and glazed curtain walls in homes and businesses. The main duties of a window fitter are: ... Measuring up the space for new windows or doors. Fixing units in place, making sure they're level and secure", image:"https://picsum.photos/200")
+
+
+# HandyMan.create(name:"Peter", handyname:"Smith", password:"123", phone:"123123123", specialty:"Builder")
+# HandyMan.create(name:"Jack", handyname:"Daniel", password:"123", phone:"123123123", specialty:"Renovating")
+# HandyMan.create(name:"Tomas", handyname:"Hancks", password:"123", phone:"123123123", specialty:"Electrician")
+# HandyMan.create(name:"Ron", handyname:"Ron", password:"123", phone:"123123123", specialty:"Plumber")
+# HandyMan.create(name:"Rony", handyname:"David", password:"123", phone:"123123123", specialty:"Cleaner")
+# HandyMan.create(name:"Sam", handyname:"Samservice", password:"123", phone:"123123123", specialty:"Handyman")
+# HandyMan.create(name:"Hammer", handyname:"Simpson", password:"123", phone:"123123123", specialty:"Cleaner")
