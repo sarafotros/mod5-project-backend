@@ -18,7 +18,7 @@
     private
 
     def request_params 
-        params.permit(:user_id, :service_id, :date,:time, :number, :post_code, :photo, :description )
+        params.permit(:user_id, :service_id, :date, :time, :number, :post_code, :photo, :description )
     end
 
 
