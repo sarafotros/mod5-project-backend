@@ -11,8 +11,10 @@
 # Service.delete_all
 
 u1 = User.create(name:"Renata", username:"Freitas", password:"123", phone:"123123123", admin?:true)
-u2 = User.create(name:"Toli", username:"Benson", password:"123", phone:"123123123", admin?:false)
 u3 = User.create(name:"Sara", username:"Fotros", password:"123", phone:"123123123", admin?:true)
+u2 = User.create(name:"Toli", username:"Benson", password:"123", phone:"123123123", admin?:false)
+u4 = User.create(name:"Mariola", username:"Pasko", password:"123", phone:"123123123", admin?:false)
+
 
 
 Service.create(name:"Coneversion or Building", category:"Builder", price:6000 ,description:"Home builders are involved in the physical labor aspect of construction, such as framing houses, installing sheathing and subfloors, building foundations, and installing roofing.", image:"https://picsum.photos/200
@@ -32,4 +34,25 @@ Service.create(name:"Furniture Assembly", category:"Handyman", price:100 ,descri
 Service.create(name:"Home Maintenance", category:"Handyman", price: 120,description:"fixing plumbing systems, providing repair guidance, cleaning and remodeling community spaces, and performing repair assessments", image:"https://picsum.photos/200
 " )
 Service.create(name:"Repair", category:"Handyman", price: 220,description:"fixing plumbing systems, providing repair guidance, cleaning and remodeling community spaces, and performing repair assessments", image:"https://picsum.photos/200
-" )
+")
+Service.create(name:"Bathrom Installation", category:"Plumber", price: 1200,description:"supply & fit all types of bathrooms, fully qualified & trained installers. full service installation including tiling, electrics and decorating. Get A Quote. Transparent Prices. Professional Team. Highlights: A Professional Team, Over 25 Years Of Building Experience.", image:"https://picsum.photos/200")
+Service.create(name:"Kitchen, Bathroom and WC Plumbing", category:"Plumber", price: 120,description:"supply & fit all types of bathrooms, fully qualified & trained installers. full service installation including tiling, electrics and decorating. Get A Quote. Transparent Prices. Professional Team. Highlights: A Professional Team, Over 25 Years Of Building Experience.", image:"https://picsum.photos/200")
+Service.create(name:"Gutterin and Rainwater Pipe", category:"Plumber", price: 250,description:"Gutters and rainwater systems help prevent the damage to the building by diverting the water away from vulnerable parts of the building that could be adversely affected by large amounts of rainfall.The primary purpose of rain gutters is to move water away from your home's foundation and basement. If your home is situated on level or downwardly sloping land, proper drainage may occur naturally, without requiring gutters to act as conduits", image:"https://picsum.photos/200")
+Service.create(name:"Radiatior", category:"Plumber", price: 520,description:"Repairs cooling systems and fuel tanks in automobiles, buses, trucks, and other automotive vehicles: Pumps water or compressed air through radiator to test it for obstructions or leaks.", image:"https://picsum.photos/200")
+
+
+Service.create(name:"Carpet Cleaning", category:"Cleaner", price: 400,description:"Applying stain and pre-cleaning treatments to the carpets and floors. Carefully removing furniture to access all areas that need to be cleaned. Cleaning carpets and floors using machine and hand-washing techniques. Drying carpets using drying machines", image:"https://picsum.photos/200")
+Service.create(name:"Domestic House Cleaning: One off", category:"Cleaner", price: 80,description:"Search Results
+Featured snippet from the web
+The Residential Cleaner will be responsible for cleaning and maintaining the household and its surrounds. Your responsibilities will include sweeping, washing, dusting, mopping, vacuuming, scrubbing, and sanitizing all areas and surfaces. You should also be proficient in making beds, and ironing and folding laundry", image:"https://picsum.photos/200")
+Service.create(name:"Domestic House Cleaning: Regular", category:"Cleaner", price: 50,description:"Search Results
+Featured snippet from the web
+The Residential Cleaner will be responsible for cleaning and maintaining the household and its surrounds. Your responsibilities will include sweeping, washing, dusting, mopping, vacuuming, scrubbing, and sanitizing all areas and surfaces. You should also be proficient in making beds, and ironing and folding laundry", image:"https://picsum.photos/200")
+Service.create(name:"Ead of Tenancy Cleaning", category:"Cleaner", price: 200,description:"The courteous & professional cleaning contractors that we work with have the tools and experience necessary to help with all your needs. Why not call us today and learn more about what we have to offer.
+We provide a comprehensive service designed to meet specifications of both landlords, tenants and agents. Each property is assessed according to it’s needs, and we work with you to ensure your expectations are always met in terms of value, service and a quality outcome.", image:"https://picsum.photos/200")
+
+Service.create(name:"House Removal", category:"Removal Service", price: 100,description:"Removals operatives move household, office and other furniture and goods to new premises or into storage. They normally work as part of a team to ensure that moves are carried out professionally from start to finish. ... Taking household goods into or out of storage. Safely packaging items before removal or storage.", image:"https://picsum.photos/200")
+Service.create(name:"Man and Van", category:"Removal Service", price: 60,description:"Our removal experts remove the stress from your home or office move. BAR Accredited. High value, secure & safe. Making your move easy", image:"https://picsum.photos/200")
+
+Service.create(name:"Single or Dubble Glazzeing", category:"Window Fitter", price: 520,description:"The window fitter will install windows, conservatories and glazed curtain walls in homes and businesses. The main duties of a window fitter are: ... Measuring up the space for new windows or doors. Fixing units in place, making sure they're level and secure", image:"https://picsum.photos/200")
+Service.create(name:"Conservatory", category:"Window Fitter", price: 520,description:"The window fitter will install windows, conservatories and glazed curtain walls in homes and businesses. The main duties of a window fitter are: ... Measuring up the space for new windows or doors. Fixing units in place, making sure they're level and secure", image:"https://picsum.photos/200")
