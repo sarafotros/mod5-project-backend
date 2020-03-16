@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   post "/create", to: "users#create"
   get "/validate", to: "users#validate"
   
-  post "/login_handy", to: "hand_ymen#login"
-  post "/signup_handy", to: "hand_ymen#create"
+  post "/login_handy", to: "handy_ymen#login"
+  post "/signup_handy", to: "handy_men#create"
   get "/valid_handy", to: "handy_men#validate"
   
   post "/upload-photos", to: "requests#create"
