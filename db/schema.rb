@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_15_201258) do
+ActiveRecord::Schema.define(version: 2020_03_15_234717) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2020_03_15_201258) do
     t.string "specialty"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "accept?", default: false
   end
 
   create_table "requests", force: :cascade do |t|
@@ -57,6 +58,7 @@ ActiveRecord::Schema.define(version: 2020_03_15_201258) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "image_url"
     t.string "time"
+    t.boolean "confirmed?", default: false
     t.index ["service_id"], name: "index_requests_on_service_id"
     t.index ["user_id"], name: "index_requests_on_user_id"
   end
