@@ -40,7 +40,6 @@ Service.create(name:"Kitchen, Bathroom and WC Plumbing", category:"Plumber", pri
 Service.create(name:"Gutterin and Rainwater Pipe", category:"Plumber", price: 250,description:"Gutters and rainwater systems help prevent the damage to the building by diverting the water away from vulnerable parts of the building that could be adversely affected by large amounts of rainfall.The primary purpose of rain gutters is to move water away from your home's foundation and basement. If your home is situated on level or downwardly sloping land, proper drainage may occur naturally, without requiring gutters to act as conduits", image:"https://picsum.photos/200")
 Service.create(name:"Radiatior", category:"Plumber", price: 520,description:"Repairs cooling systems and fuel tanks in automobiles, buses, trucks, and other automotive vehicles: Pumps water or compressed air through radiator to test it for obstructions or leaks.", image:"https://picsum.photos/200")
 
-
 Service.create(name:"Carpet Cleaning", category:"Cleaner", price: 400,description:"Applying stain and pre-cleaning treatments to the carpets and floors. Carefully removing furniture to access all areas that need to be cleaned. Cleaning carpets and floors using machine and hand-washing techniques. Drying carpets using drying machines", image:"https://picsum.photos/200")
 Service.create(name:"Domestic House Cleaning: One off", category:"Cleaner", price: 80,description:"Search Results
 Featured snippet from the web
@@ -56,3 +55,12 @@ Service.create(name:"Man and Van", category:"Removal Service", price: 60,descrip
 
 Service.create(name:"Single or Dubble Glazzeing", category:"Window Fitter", price: 520,description:"The window fitter will install windows, conservatories and glazed curtain walls in homes and businesses. The main duties of a window fitter are: ... Measuring up the space for new windows or doors. Fixing units in place, making sure they're level and secure", image:"https://picsum.photos/200")
 Service.create(name:"Conservatory", category:"Window Fitter", price: 520,description:"The window fitter will install windows, conservatories and glazed curtain walls in homes and businesses. The main duties of a window fitter are: ... Measuring up the space for new windows or doors. Fixing units in place, making sure they're level and secure", image:"https://picsum.photos/200")
+
+
+HandyMan.create(name:"Peter", handyname:"Smith", password:"123", phone:"123123123", specialty:"Builder")
+HandyMan.create(name:"Jack", handyname:"Daniel", password:"123", phone:"123123123", specialty:"Renovating")
+HandyMan.create(name:"Tomas", handyname:"Hancks", password:"123", phone:"123123123", specialty:"Electrician")
+HandyMan.create(name:"Ron", handyname:"Ron", password:"123", phone:"123123123", specialty:"Plumber")
+HandyMan.create(name:"Rony", handyname:"David", password:"123", phone:"123123123", specialty:"Cleaner")
+HandyMan.create(name:"Sam", handyname:"Samservice", password:"123", phone:"123123123", specialty:"Handyman")
+HandyMan.create(name:"Hammer", handyname:"Simpson", password:"123", phone:"123123123", specialty:"Cleaner")

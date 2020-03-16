@@ -22,4 +22,9 @@ class ApplicationController < ActionController::API
         User.find_by(id: id)
     end
 
+    def get_handyman 
+        id = decode_token["id"]
+        HandyMan.find_by(id: id)
+    end
+
 end
