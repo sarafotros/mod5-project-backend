@@ -1,4 +1,7 @@
 class HandyMenController < ApplicationController
+    #  def show 
+    #    render json: HandyMan.find(params[:id])
+    # end
 
     def index 
         # render json: {users:User.all}
@@ -6,7 +9,7 @@ class HandyMenController < ApplicationController
     end
   
     def login 
-        handyman = HandyMan.find_by(handynamename: params[:handynamename])
+        handyman = HandyMan.find_by(handyname: params[:handyname])
         if handyman && handyman.authenticate(params[:password])
             render json: {handyman: handyman, token: generate_token({id: handyman.id }) }
         else
@@ -17,7 +20,7 @@ class HandyMenController < ApplicationController
     def validate
         if get_handyman
             # If so, send back that handyman's handymanname and a newly generated token
-            render json: { handyman: get_handyman, token: generate_token(id: get_handyman.id)}
+            render json: { handyman: get_handyman , token: generate_token(id: get_handyman.id)}
           else
             # Otherwise, send back an error
             render json: { error: "You are not authorized" }
