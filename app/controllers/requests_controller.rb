@@ -2,6 +2,8 @@
     class RequestsController < ApplicationController
      def index 
         requests =  Request.all 
+        @user = user.get_user
+        # byebug
         render json: requests,  include: [:service] 
      end
 

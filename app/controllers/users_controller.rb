@@ -10,7 +10,7 @@ class UsersController < ApplicationController
         if user && user.authenticate(params[:password])
             render json: {user: user, token: generate_token({id: user.id }) }
         else
-            render json: { message: "Invalid Username/Password"}
+            render json: { message: "Invalid Username/Password", errorCode: 1001} ,status: 401
         end
     end
 
