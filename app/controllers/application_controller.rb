@@ -9,7 +9,7 @@ class ApplicationController < ActionController::API
 
     def decode_token 
         token = request.headers["Authorization"]
-        
+        # byebug
         begin
             JWT.decode(token, secret).first 
         rescue
@@ -17,8 +17,15 @@ class ApplicationController < ActionController::API
         end 
     end
 
+    def myuser
+        id = decode_token["id"] 
+         User.find_by(id: id)
+        # name = usernew.username
+    end
+
     def get_user 
         id = decode_token["id"]
+        # byebug
         User.find_by(id: id)
     end
 

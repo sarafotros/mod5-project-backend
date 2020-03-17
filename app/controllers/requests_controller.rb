@@ -1,9 +1,18 @@
 
     class RequestsController < ApplicationController
      def index 
-        requests =  Request.all 
-        @user = user.get_user
-        # byebug
+       requests =  Request.all 
+        # if myuser
+        #     user_id = get_user.id
+        #     # byebug
+        #     requests = requests.select{ |r| r.user_id == user_id }
+        # else
+        #     requests = []
+        # end
+        if !myuser
+            requests = []
+        end
+
         render json: requests,  include: [:service] 
      end
 
