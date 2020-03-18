@@ -9,7 +9,7 @@
         # else
         #     requests = []
         # end
-        if !myuser
+        if !myuser && !get_handyman
             requests = []
         end
 
