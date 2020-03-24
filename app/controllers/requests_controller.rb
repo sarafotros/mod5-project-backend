@@ -35,6 +35,11 @@
     end 
 
 
+    def destroy
+        Request.destroy(params[:id])
+        render json: {status: true}
+    end
+
     private
 
     def request_params 
