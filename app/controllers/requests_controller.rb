@@ -40,10 +40,17 @@
         render json: {status: true}
     end
 
+    def update 
+         request = Request.find(params[:id])
+         request.update(handy_man_id: request_params[:handy_man_id], confirmed?: request_params[:confirmed?])
+         render json: request, include: [:service]
+
+    end
+
     private
 
     def request_params 
-        params.permit(:user_id, :service_id, :date, :time, :number, :post_code, :photo, :description )
+        params.permit(:user_id, :service_id, :date, :time, :number, :post_code, :photo, :description, :handy_man_id, :confirmed? )
     end
 
 
