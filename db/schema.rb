@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_15_234717) do
+ActiveRecord::Schema.define(version: 2020_03_24_232852) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,8 @@ ActiveRecord::Schema.define(version: 2020_03_15_234717) do
     t.string "image_url"
     t.string "time"
     t.boolean "confirmed?", default: false
+    t.bigint "handy_man_id"
+    t.index ["handy_man_id"], name: "index_requests_on_handy_man_id"
     t.index ["service_id"], name: "index_requests_on_service_id"
     t.index ["user_id"], name: "index_requests_on_user_id"
   end
@@ -84,6 +86,7 @@ ActiveRecord::Schema.define(version: 2020_03_15_234717) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "requests", "handy_men"
   add_foreign_key "requests", "services"
   add_foreign_key "requests", "users"
 end
